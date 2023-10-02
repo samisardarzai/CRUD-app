@@ -7,28 +7,28 @@
                         How to insert data into database
                         
                     </h5>
-                    <a  href="<?php echo base_url('employee');?>  " class="btn btn-danger float-xl-right float-right "> Back</a>
+                    <a  href="<?php echo base_url('home/employee');?>  " class="btn btn-danger float-xl-right float-right "> Back</a>
                 </div>
                 <div class="card-body">
-                    <form action="">
+                    <form action="<?php echo base_url ("home/employee/store") ?>" method="POST">
                         <div class="form-group">
                             <label for="">First Name</label>
-                            <input type="text" class="form-control">
+                            <input type="text" name="frist-name" class="form-control">
                         </div>
 
                         <div class="form-group">
                             <label for="">Last Name</label>
-                            <input type="text" class="form-control">
+                            <input type="text" name="last-name" class="form-control">
                         </div>
 
                         <div class="form-group">
                             <label for="">Email</label>
-                            <input type="text" class="form-control">
+                            <input type="text" name="email" class="form-control">
                         </div>
 
                         <div class="form-group">
                             <label for="">Phone Number</label>
-                            <input type="text" class="form-control">
+                            <input type="text"name="phone" class="form-control">
                         </div>
 
                         <div class="form-group">

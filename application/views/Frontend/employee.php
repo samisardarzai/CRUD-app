@@ -1,5 +1,6 @@
 
-<div class="container">
+
+<div class="container ">
     <div class="row">
         <div class="col-md-12 mt-4">
             <div class="card">
@@ -8,7 +9,29 @@
                         How to insert data into database
                        
                     </h5>
-                    <a  href="<?php echo base_url('employee/add');?>  " class="btn btn-primary float-xl-right float-right "> Add Employee</a>
+                    <a  href="<?php echo base_url('home/employee/add');?>  " class="btn btn-primary float-xl-right float-right "> Add Employee</a>
+                </div>
+                <div class="card-body">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Phone No</th>
+                                <th>Email ID</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>sam</td>
+                                <td>sardar</td>
+                                <td>1234</td>
+                                <td>s@m.com</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>

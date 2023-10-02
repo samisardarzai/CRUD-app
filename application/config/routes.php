@@ -55,5 +55,7 @@ $route['translate_uri_dashes'] = FALSE;
 
 
 //-------------------
-$route['employee'] = 'Frontend/EmployeeController/index';
-$route['employee/add'] = 'Frontend/EmployeeController/create';
+$route['home'] = 'Frontend/EmployeeController/index';
+$route['home/employee'] = 'Frontend/EmployeeController/employee';
+$route['home/employee/add'] = 'Frontend/EmployeeController/create';
+$route['home/employee/store'] = 'Frontend/EmployeeController/store';
