@@ -20,6 +20,15 @@
        $this->load->view('frontend/create');
        $this->load->view('template/footer');
      }
+     public function store (){
+        $date = [
+          'frist_name'=>$this->input->post('frist_name'),
+          'last_name'=>$this->input->post('last_name'),
+          'email'=>$this->input->post('email'),
+          'phone'=>$this->input->post('phone')
+        ];
+        var_dump($date);
+     }
     
      
  }

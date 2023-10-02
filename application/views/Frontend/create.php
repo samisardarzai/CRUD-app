@@ -13,12 +13,12 @@
                     <form action="<?php echo base_url ("home/employee/store") ?>" method="POST">
                         <div class="form-group">
                             <label for="">First Name</label>
-                            <input type="text" name="frist-name" class="form-control">
+                            <input type="text" name="frist_name" class="form-control">
                         </div>
 
                         <div class="form-group">
                             <label for="">Last Name</label>
-                            <input type="text" name="last-name" class="form-control">
+                            <input type="text" name="last_name" class="form-control">
                         </div>
 
                         <div class="form-group">
