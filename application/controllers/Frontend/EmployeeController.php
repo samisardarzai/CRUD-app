@@ -21,13 +21,23 @@
        $this->load->view('template/footer');
      }
      public function store (){
-        $date = [
-          'frist_name'=>$this->input->post('frist_name'),
-          'last_name'=>$this->input->post('last_name'),
-          'email'=>$this->input->post('email'),
-          'phone'=>$this->input->post('phone')
-        ];
-        var_dump($date);
+        $this->form_validation->set_rules('frist_name','Frist Name','required');
+        $this->form_validation->set_rules('last_name','Frist Name','required');
+        $this->form_validation->set_rules('email','Frist Name','required');
+        $this->form_validation->set_rules('phone','Frist Name','required');
+        if($this->form_validation->run()){
+          $date = [
+            'frist_name'=>$this->input->post('frist_name'),
+            'last_name'=>$this->input->post('last_name'),
+            'email'=>$this->input->post('email'),
+            'phone'=>$this->input->post('phone')
+          ];
+          var_dump($date);
+        }
+        else{
+             redirect(base_url('home/employee/add'));
+        }
+     
      }
     
      

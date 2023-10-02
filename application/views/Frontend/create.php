@@ -14,21 +14,25 @@
                         <div class="form-group">
                             <label for="">First Name</label>
                             <input type="text" name="frist_name" class="form-control">
+                            <small><?php echo form_error('frist_name')?></small>
                         </div>
 
                         <div class="form-group">
                             <label for="">Last Name</label>
                             <input type="text" name="last_name" class="form-control">
+                            <small><?php echo form_error('last_name')?></small>
                         </div>
 
                         <div class="form-group">
                             <label for="">Email</label>
                             <input type="text" name="email" class="form-control">
+                            <small><?php echo form_error('email')?></small>
                         </div>
 
                         <div class="form-group">
                             <label for="">Phone Number</label>
                             <input type="text"name="phone" class="form-control">
+                            <small><?php echo form_error('phone')?></small>
                         </div>
 
                         <div class="form-group">
