@@ -11,7 +11,9 @@
      }
      public function employee (){
       $this->load->view('template/header');
-       $this->load->view('frontend/employee');
+      $this->load->model('EmployeeModel');
+      $data['employee']=$this->EmployeeModel->getEmployee();
+       $this->load->view('frontend/employee',$data);
        $this->load->view('template/footer');
      }
 
