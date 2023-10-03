@@ -59,6 +59,35 @@
        $this->load->view('frontend/edit',$data);
        $this->load->view('template/footer');
      }
+
+     public function update($id)
+     {
+      $this->form_validation->set_rules('first_name','First Name','required');
+      $this->form_validation->set_rules('last_name','Last Name','required');
+      $this->form_validation->set_rules('email','Email Address','required');
+      $this->form_validation->set_rules('phone','Phone Number','required');
+
+      if($this->form_validation->run()){
+        $data = [
+
+          'first_name'=>$this->input->post('first_name'),
+          'last_name'=>$this->input->post('last_name'),
+          'email'=>$this->input->post('email'),
+          'phone'=>$this->input->post('phone')
+        ];
+
+        $this->load->model('EmployeeModel');
+        $this->EmployeeModel->updateEmployee($data,$id);
+         redirect(base_url('home/employee'));
+        // var_dump($date);
+      }
+      else{
+          //  redirect(base_url('home/employee/add'));
+          $this->edit($id);
+      }
+
+
+     }
     
      
  }
