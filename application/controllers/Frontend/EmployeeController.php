@@ -5,8 +5,9 @@
  class EmployeeController extends CI_Controller {
  
      public function index (){
-      
+      $this->load->view('template/header');
        $this->load->view('frontend/homepage');
+       $this->load->view('template/footer');
     ;
      }
      public function employee (){
@@ -87,6 +88,12 @@
       }
 
 
+     }
+
+     public function delete($id){
+      $this->load->model('EmployeeModel');
+      $this->EmployeeModel->deleteEmployee($id);
+      redirect(base_url('home/employee'));
      }
     
      

@@ -61,3 +61,4 @@ $route['home/employee/add'] = 'Frontend/EmployeeController/create';
 $route['home/employee/store'] = 'Frontend/EmployeeController/store';
 $route['home/employee/edit/(:any)'] = 'Frontend/EmployeeController/edit/$1';
 $route['home/employee/update/(:any)'] = 'Frontend/EmployeeController/update/$1';
+$route['home/employee/delete/(:any)'] = 'Frontend/EmployeeController/delete/$1';

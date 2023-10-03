@@ -9,7 +9,7 @@
                     <a  href="<?php echo base_url('home/employee/add');?>  " class="btn btn-primary float-xl-right float-right "> Add Employee</a>
                 </div>
                 <div class="card-body">
-                    <table class="table table-bordered">
+                    <table id="datatable1" class="table table-bordered">
                         <thead>
                             <tr>
                                 <th>ID</th>
@@ -33,7 +33,7 @@
                                     <a href="<?php echo base_url('home/employee/edit/'.$row->id)?>" class="btn btn-success " >Edit</a>
                                 </td>
                                 <td>
-                                    <a href="" class="btn btn-danger " >Delete</a>
+                                    <a href="<?php echo base_url('home/employee/delete/'.$row->id)?>" class="btn btn-danger " >Delete</a>
                                 </td>
                             </tr>
                             <?php endforeach; ?>
