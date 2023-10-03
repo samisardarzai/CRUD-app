@@ -30,7 +30,7 @@
                             <td><?= $row->email?> </td>
                             <td><?= $row->phone?> </td>
                                 <td>
-                                    <a href="<?php echo base_url('home/employee/edite/'.$row->id)?>" class="btn btn-success " >Edit</a>
+                                    <a href="<?php echo base_url('home/employee/edit/'.$row->id)?>" class="btn btn-success " >Edit</a>
                                 </td>
                                 <td>
                                     <a href="" class="btn btn-danger " >Delete</a>

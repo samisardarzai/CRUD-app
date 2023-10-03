@@ -59,4 +59,4 @@ $route['home'] = 'Frontend/EmployeeController/index';
 $route['home/employee'] = 'Frontend/EmployeeController/employee';
 $route['home/employee/add'] = 'Frontend/EmployeeController/create';
 $route['home/employee/store'] = 'Frontend/EmployeeController/store';
-$route['home/employee/edit/(:any)'] = 'Frontend/EmployeeController/edit';
+$route['home/employee/edit/(:any)'] = 'Frontend/EmployeeController/edit/$1';

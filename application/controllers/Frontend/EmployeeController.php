@@ -51,12 +51,12 @@
         }
      
      }
-     public function edit ($id){
-
-      $this->load->model("EmployeeModel");
-      $data['employee']=$data->EmployeeModel->editEmloyee($id);
+     public function edit($id){
       $this->load->view('template/header');
-       $this->load->view('frontend/edit');
+      $this->load->model("EmployeeModel");
+      $data['employee']=$this->EmployeeModel->editEmployee($id);
+      
+       $this->load->view('frontend/edit',$data);
        $this->load->view('template/footer');
      }
     
