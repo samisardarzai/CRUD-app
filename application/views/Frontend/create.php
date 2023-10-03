@@ -3,10 +3,7 @@
         <div class="col-md-12 mt-4">
             <div class="card">
                 <div class="card-header ">
-                    <h5>
-                        How to insert data into database
-                        
-                    </h5>
+            
                     <a  href="<?php echo base_url('home/employee');?>  " class="btn btn-danger float-xl-right float-right "> Back</a>
                 </div>
                 <div class="card-body">

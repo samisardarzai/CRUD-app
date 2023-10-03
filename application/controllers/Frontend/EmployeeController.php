@@ -13,6 +13,7 @@
       $this->load->view('template/header');
       $this->load->model('EmployeeModel');
       $data['employee']=$this->EmployeeModel->getEmployee();
+
        $this->load->view('frontend/employee',$data);
        $this->load->view('template/footer');
      }
@@ -49,6 +50,11 @@
             $this->create();
         }
      
+     }
+     public function edit ($id){
+
+      $this->load->model("");
+
      }
     
      

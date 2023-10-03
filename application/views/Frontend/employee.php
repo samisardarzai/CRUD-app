@@ -5,10 +5,7 @@
         <div class="col-md-12 mt-4">
             <div class="card">
                 <div class="card-header">
-                    <h5>
-                        How to insert data into database
-                       
-                    </h5>
+                    
                     <a  href="<?php echo base_url('home/employee/add');?>  " class="btn btn-primary float-xl-right float-right "> Add Employee</a>
                 </div>
                 <div class="card-body">
@@ -27,13 +24,13 @@
                         <tbody>
                             <?php foreach ($employee as $row): ?>
                             <tr>
-                            <?php echo "<td>$row->id </td>"; ?>
-                            <?php echo "<td>$row->first_name </td>"; ?>
-                            <?php echo "<td>$row->last_name </td>"; ?>
-                            <?php echo "<td>$row->email </td>"; ?>
-                            <?php echo "<td>$row->phone </td>"; ?>
+                            <td><?php echo $row->id; ?> </td>
+                            <td><?= $row->first_name ?> </td>
+                            <td><?= $row->last_name ?></td>
+                            <td><?= $row->email?> </td>
+                            <td><?= $row->phone?> </td>
                                 <td>
-                                    <a href="" class="btn btn-success " >Edit</a>
+                                    <a href="<?php echo base_url('home/employee/edite/'.$row->id)?>" class="btn btn-success " >Edit</a>
                                 </td>
                                 <td>
                                     <a href="" class="btn btn-danger " >Delete</a>

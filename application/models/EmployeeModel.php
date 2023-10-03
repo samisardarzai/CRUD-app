@@ -11,6 +11,8 @@ class EmployeeModel extends CI_Model{
 
        return $this->db->insert('employee',$data);
     }
+
+    public function get
 }
 
 ?>
