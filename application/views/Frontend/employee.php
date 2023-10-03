@@ -20,6 +20,8 @@
                                 <th>Last Name</th>
                                 <th>Phone No</th>
                                 <th>Email ID</th>
+                                <th>Edit</th>
+                                <th>Delete</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -29,6 +31,12 @@
                                 <td>sardar</td>
                                 <td>1234</td>
                                 <td>s@m.com</td>
+                                <td>
+                                    <a href="" class="btn btn-success " >Edit</a>
+                                </td>
+                                <td>
+                                    <a href="" class="btn btn-danger " >Delete</a>
+                                </td>
                             </tr>
                         </tbody>
                     </table>

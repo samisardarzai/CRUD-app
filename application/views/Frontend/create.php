@@ -13,8 +13,8 @@
                     <form action="<?php echo base_url ("home/employee/store") ?>" method="POST">
                         <div class="form-group">
                             <label for="">First Name</label>
-                            <input type="text" name="frist_name" class="form-control">
-                            <small><?php echo form_error('frist_name')?></small>
+                            <input type="text" name="first_name" class="form-control">
+                            <small><?php echo form_error('first_name')?></small>
                         </div>
 
                         <div class="form-group">
