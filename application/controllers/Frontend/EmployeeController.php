@@ -20,22 +20,26 @@
        $this->load->view('frontend/create');
        $this->load->view('template/footer');
      }
+
      public function store (){
+         
         $this->form_validation->set_rules('frist_name','Frist Name','required');
-        $this->form_validation->set_rules('last_name','Frist Name','required');
-        $this->form_validation->set_rules('email','Frist Name','required');
-        $this->form_validation->set_rules('phone','Frist Name','required');
+        $this->form_validation->set_rules('last_name','Last Name','required');
+        $this->form_validation->set_rules('email','Email Address','required');
+        $this->form_validation->set_rules('phone','Phone Number','required');
         if($this->form_validation->run()){
           $date = [
+
             'frist_name'=>$this->input->post('frist_name'),
             'last_name'=>$this->input->post('last_name'),
             'email'=>$this->input->post('email'),
             'phone'=>$this->input->post('phone')
           ];
-          var_dump($date);
+          // var_dump($date);
         }
         else{
-             redirect(base_url('home/employee/add'));
+            //  redirect(base_url('home/employee/add'));
+            $this->create();
         }
      
      }
