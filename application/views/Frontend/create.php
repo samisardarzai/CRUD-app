@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container " style="background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);">
     <div class="row">
         <div class="col-md-12 mt-4">
             <div class="card">

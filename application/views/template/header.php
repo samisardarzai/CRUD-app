@@ -10,6 +10,8 @@
   
     <title>MOBI-HUB Employees Data</title>
 </head>
+ <body style="background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);" >
+    
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="#">MOBI-HUB</a>
