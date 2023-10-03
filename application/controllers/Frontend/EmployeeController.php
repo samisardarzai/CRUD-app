@@ -53,8 +53,11 @@
      }
      public function edit ($id){
 
-      $this->load->model("");
-
+      $this->load->model("EmployeeModel");
+      $data['employee']=$data->EmployeeModel->editEmloyee($id);
+      $this->load->view('template/header');
+       $this->load->view('frontend/edit');
+       $this->load->view('template/footer');
      }
     
      
